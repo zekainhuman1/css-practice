@@ -37,15 +37,15 @@
   text-decoration: underline;
 }
 
-.nav_vertical > .nav_link {
+.nav_vertical>.nav_link {
   display: block;
 }
 
-.nav_inLine > .nav_link:not(:last-child) {
+.nav_inLine>.nav_link:not(:last-child) {
   margin-right: 24px;
 }
 
-.nav_vertical > .nav_link:not(:last-child) {
+.nav_vertical>.nav_link:not(:last-child) {
   margin-right: 24px;
 }
 
@@ -136,7 +136,7 @@
   font-weight: 700;
 }
 
-.preview > *:not(:last-child) {
+.preview>*:not(:last-child) {
   margin-bottom: 12px;
 }
 
@@ -191,103 +191,98 @@
 }
 
 .category_button:hover {
-	background: #6c757d1d;
+  background: #6c757d1d;
 }
 
 .list_aside {
-	margin-left: 40px;
+  margin-left: 40px;
 }
 
 .category_list {
-	text-align: right;
+  text-align: right;
 }
 
-.list {
-
-}
-
-.list > *:not(:last-child) {
-	margin-bottom: 40px;
+.list>*:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .post {
-	padding-bottom: 12px;
-	border-bottom: 1px solid #dee2e6;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dee2e6;
 }
 
-.post > *:not(:last-child) {
-	margin-bottom: 12px;
+.post>*:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .post_title {
-	display: block;
-	font-weight: 500;
-	font-size: 27px;
-	color: #212529;
+  display: block;
+  font-weight: 500;
+  font-size: 27px;
+  color: #212529;
 }
 
 .post_info {
-	color: #999999;
-	font-weight: 400;
-	font-size: 16px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .post_author {
-	color: #0050FF;
+  color: #0050FF;
 }
 
 .post_description {
-	color: #212529;
-	font-weight: 400;
-	font-size: 16px;
+  color: #212529;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.list_aside > *:not(:last-child) {
-	margin-bottom: 24px;
+.list_aside>*:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .about {
-	background: #F8F9FA;
-	padding: 24px;
+  background: #F8F9FA;
+  padding: 24px;
 }
 
 .about_title {
-	color: #212529;
-	font-weight: 500;
-	font-size: 20px;
+  color: #212529;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .about_text {
-	color: #212529;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 170%;
+  color: #212529;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
 }
 
 .link_list {
-	padding: 24px;
+  padding: 24px;
 }
 
 .link_title {
-	display: block;
-	font-weight: 500;
-	font-size: 24px;
-	color: #212529;
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  color: #212529;
 }
 
-.link_list > *:not(:last-child) {
-	margin-bottom: 12px;
+.link_list>*:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .link_item {
-	display: block;
-	font-size: 16px;
-	font-weight: 400;
-	text-decoration: none;
-	color: #007bff;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #007bff;
 }
 
 .link_item:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
-
