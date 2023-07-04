@@ -1,0 +1,66 @@
+<header class="header">
+    <div>
+        {{> logo }}
+    </div>
+    <nav class="header_nav">
+        <div>
+            {{> nav list=header}}
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    {{#with info}}
+    <div class="info">
+        <h1 class="info_title">{{title}}</h1>
+        <p class="info_description">{{description}}</p>
+    </div>
+    {{/with}}
+    {{#with form}}
+    {{> form}}
+    {{/with}}
+</main>
+
+<div class="updates">
+    {{#with updates}}
+    <h2 class="updates_title">{{title}}</h2>
+    {{#each list}}
+    <div class="upd_list">
+        <img src="https://picsum.photos/32/32" alt="user icon" class="upd_img">
+        <div class="upd_info">
+            <span class="upd_nick">@{{nickname}}</span>
+            <p class="upd_desc">{{description}}</p>
+        </div>
+    </div>
+    {{/each}}
+    <a href="{{show_all.url}}" class="upd_link">{{show_all.text}}</a>
+    {{/with}}
+</div>
+{{#with expirience}}
+<div class="exp_block">
+    <h2 class="exp_title">{{title}}</h2>
+    <div class="exp_badge">{{badge}}</div>
+    <div class="exp_cards_block">
+        {{#each list}}
+        <div class="exp_card">
+            <span class="exp_name">{{name}}</span>
+            <p class="exp_details">{{details}}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+{{/with}}
+
+
+<footer class="footer">
+    <div>
+        {{> logo }}
+        <span class="footer_copyright">Copyright 2023-2024</span>
+    </div>
+    {{#each footer}}
+    <div>
+        <span class="footer_title">{{title}}</span>
+        {{> nav list=links isVertical=true}}
+    </div>
+    {{/each}}
+</footer>

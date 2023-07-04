@@ -4,7 +4,7 @@
   --space-l: 24px;
   --space-xl: 36px;
   --size-s: 14px;
-  --sixe-d: 16px;
+  --size-d: 16px;
   --size-l: 20px;
   --color-primary: rgb(46, 46, 255);
   --color-white: #ffffff;
@@ -75,7 +75,7 @@
 
 .nav_link {
   color: var(--color-text);
-  font-size: var(--sixe-d);
+  font-size: var(--size-d);
   text-decoration: none;
   line-height: 100%;
 }
@@ -170,14 +170,14 @@
 }
 
 .card_text {
-  font-size: var(--sixe-d);
+  font-size: var(--size-d);
   color: var(--color-text);
   font-weight: var(--weight-text);
 }
 
 .button {
   display: inline-block;
-  font-size: var(--sixe-d);
+  font-size: var(--size-d);
   text-decoration: none;
   padding: var(--space-m) var(--space-xm);
   border-radius: var(--border-radius);
@@ -215,7 +215,7 @@
 }
 
 .form_info {
-  font-size: var(--sixe-d);
+  font-size: var(--size-d);
   font-weight: var(--weight-text);
   color: var(--color-white);
 }
