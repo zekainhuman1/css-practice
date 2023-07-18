@@ -1,0 +1,59 @@
+@layer normalize, block, element, mod, adaptive;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-white);
+  }
+
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: rgba(0,0,0,0.7);
+  --color-primary: #0D6EFD;
+  --color-light: #CED4DA;
+  --color-background: #EFEFF4;
+  --color-backgroud-dark: #212529;
+  --color-blue-light: #008BE1;
+  --color-blue-dark: #0068BC;
+  --color-yellow-light: #FFF8E3;
+  --color-yellow-dark: #FFBF35;
+
+  --spacing-1: 8px;
+  --spacing-2: 12px;
+  --spacing-3: 16px;
+  --spacing-4: 20px;
+  --spacing-5: 24px;
+  --spacing-6: 28px;
+  --spacing-7: 32px;
+  --spacing-8: 36px;
+
+  --size-1: 12px;
+  --size-2: 16px;
+  --size-3: 20px;
+  --size-4: 24px;
+  --size-5: 28px;
+  --size-6: 32px;
+
+  --radius-1: 4px;
+
+  --opacity-1: 0.7;
+  --opacity-2: 0.3;
+  --transition-1: 0.7s;
+
+  --line-height: 1.5em;
+  }
+
+@layer block {
+  }
+
+@layer element {
+  }
+
+@layer mod {
+  }
+
+@layer adaptive {
+  }
