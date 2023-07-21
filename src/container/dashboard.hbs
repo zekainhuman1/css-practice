@@ -17,32 +17,45 @@
 
     <link href='css/normalize.css' rel='stylesheet' />
 
-    <link href='css/slack.css' rel='stylesheet' />
+    <link href='css/dashboard.css' rel='stylesheet' />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
     <div class="page page--dashboard">
         <aside class="page__aside aside vertical">
-            <div class="aside__logo">Sidebar</div>
+            <div class="aside__logo text">Sidebar</div>
             <nav class="vertical vertical--small">
                 <a href="#" class="click nav-button nav-button--active hover">
                     <span class="icon nav-button__icon" style="background-image: url('/svg/nav/home.svg');"></span>
-                    <span class="text text--line text--white"></span>
+                    <span class="text text--white">Home</span>
+                </a>
+                <a href="#" class="click nav-button hover">
+                    <span class="icon nav-button__icon" style="background-image: url('/svg/nav/orders.svg');"></span>
+                    <span class="text text--white">Orders</span>
+                </a>
+                <a href="#" class="click nav-button hover">
+                    <span class="icon nav-button__icon" style="background-image: url('/svg/nav/products.svg');"></span>
+                    <span class="text text--white">Products</span>
                 </a>
             </nav>
         </aside>
         <header class="header">
-
+            <div class="layout header__content text--small">
+                <div class="header__search">
+                    <input type="text" placeholder="Search" class="text field field--header">
+                    <span class="icon icon__header-search"
+                        style="background-image: url('/svg/header/search.svg');"></span>
+                    <span class="icon icon--header-settings click icon--button icon--color-blue"
+                        style="background-image: url('/svg/header/settings.svg');"></span>
+                </div>
+            </div>
         </header>
         <main class="main">
-
+            <div>
+                <div class="field field--select">Choose...</div>
+            </div>
         </main>
     </div>
 </body>
