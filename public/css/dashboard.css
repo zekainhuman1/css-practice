@@ -247,6 +247,7 @@ body {
   .purchase__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
   }
 
   .purchase__info {
@@ -254,7 +255,7 @@ body {
     flex-direction: column;
   }
 
-  .purchase__radioform {
+  .purchase__radio {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-2);
@@ -286,6 +287,27 @@ body {
   .purchase__radiobtn > label {
     cursor: pointer;
   }
+
+  .purchase__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing-1) var(--spacing-5);
+  }
+
+  .field__select {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  .purchase__btn {
+    min-height: 36px;
+    border-radius: var(--radius-1);
+    background-color: var(--color-primary);
+  }
 }
 
 @layer mod {
@@ -293,6 +315,10 @@ body {
     display: grid;
     grid-template-columns: 280px 1fr;
     grid-template-rows: min-content 1fr;
+  }
+
+  .text--payment {
+    color: var(--color-backgroud-dark);
   }
 
   .text--gray {
@@ -383,11 +409,20 @@ body {
   .field--select {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   .icon--header-button {
     height: 28px;
     width: 28px;
+  }
+
+  .icon--choose-button {
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top: calc(50% - (12px / 2));
+    right: var(--spacing-2);
   }
 
   .analytic--double {
@@ -417,10 +452,20 @@ body {
     flex-direction: column;
     gap: var(--spacing-1);
   }
+
+  .field--purchase {
+    max-width: 185px;
+    width: 100%;
+  }
 }
 
 @layer adaptive {
-  @media all and (width <= 1000px) {
+  @media all and (770px <= width < 1235px) {
+    .purchase__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media all and (width <= 1070px) {
     .page--dashboard {
       grid-template-columns: 1fr;
     }
@@ -431,6 +476,37 @@ body {
 
     .header {
       display: none;
+    }
+  }
+  @media all and (480px <= width < 770px) {
+    .billing {
+      grid-template-columns: 1fr;
+    }
+
+    .analytic__block {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .analytic--double {
+      grid-row: auto;
+    }
+  }
+
+  @media all and (width <= 480px) {
+    .billing {
+      grid-template-columns: 1fr;
+    }
+
+    .purchase__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .analytic__block {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .analytic--double {
+      grid-row: auto;
     }
   }
 }

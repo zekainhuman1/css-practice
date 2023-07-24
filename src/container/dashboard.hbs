@@ -93,7 +93,7 @@
                         <span class="icon analytic__button click icon--button icon--color-yellow-light"
                             style="background-image: url('/svg/analytic/shop.svg');"></span>
                         <div class="analytic--small">
-                            <div class="analytic__title-small text text--heading">$203k</div>
+                            <div class="analytic__title-small text text--payment">$203k</div>
                             <div class="text--small text text--gray--dark">Total Income</div>
                         </div>
                     </div>
@@ -141,45 +141,68 @@
                         </div>
                     </div>
                 </div>
-                <div class="purchase box">
+                <form class="purchase box">
                     <div class="text text--heading">Payment</div>
                     <hr class="divider">
-                    <form class="purchase__radioform">
+                    <div class="purchase__radio">
                         <div class="purchase__radiobtn">
                             <input type="radio" name="payment" id="1">
                             <div></div>
-                            <label for="1">Credit card</label>
+                            <label for="1" class="text text--payment">Credit card</label>
                         </div>
                         <div class="purchase__radiobtn">
                             <input type="radio" name="payment" id="2">
                             <div></div>
-                            <label for="2">Debit card</label>
+                            <label for="2" class="text text--payment">Debit card</label>
                         </div>
                         <div class="purchase__radiobtn">
                             <input type="radio" name="payment" id="3">
                             <div></div>
-                            <label for="3">PayPal</label>
+                            <label for="3" class="text text--payment">PayPal</label>
                         </div>
-                    </form>
+                    </div>
                     <hr class="divider">
-                    <form class="purchase__radioform">
-                        <div class="purchase__radiobtn">
-                            <input type="radio" name="payment" id="1">
-                            <div></div>
-                            <label for="1">Credit card</label>
+                    <div class="purchase__input">
+                        <label for="name" class="text text--payment">Name on card</label>
+                        <label for="card" class="text text--payment">Credit card number</label>
+                        <input type="text required" name="name" class="text text--payment field field--purchase">
+                        <input type="number required" name="card" class="text text--payment field field--purchase">
+                    </div>
+                    <div class="purchase__input">
+                        <label for="date" class="text text--payment">Expiration</label>
+                        <label for="cvv" class="text text--payment">CVV</label>
+                        <input type="month required" name="date" class="text text--payment field field--purchase">
+                        <input type="number required" name="cvv" class="text text--payment field field--purchase">
+                    </div>
+
+                    <hr class="divider">
+                    <div class="purchase__input">
+                        <span class="text text--payment">Country</span>
+                        <span class="text text--payment">State</span>
+                        <div class="field field--select">
+                            <spna class="text text--payment">Choose...</spna>
+                            <span class="icon icon--choose-button click"
+                                style="background-image: url('/svg/choose.svg');"></span>
+                            <select name="country" id="1" class="field__select click">
+                                <option value="ukraine">Ukraine</option>
+                                <option value="usa">USA</option>
+                                <option value="france">France</option>
+                            </select>
                         </div>
-                        <div class="purchase__radiobtn">
-                            <input type="radio" name="payment" id="2">
-                            <div></div>
-                            <label for="2">Debit card</label>
+                        <div class="field field--select">
+                            <spna class="text text--payment">Choose...</spna>
+                            <span class="icon icon--choose-button click"
+                                style="background-image: url('/svg/choose.svg');"></span>
+                            <select name="state" id="2" class="field__select click">
+                                <option value="kiyv">Kiyv</option>
+                                <option value="boston">Boston</option>
+                                <option value="nice">Nice</option>
+                            </select>
                         </div>
-                        <div class="purchase__radiobtn">
-                            <input type="radio" name="payment" id="3">
-                            <div></div>
-                            <label for="3">PayPal</label>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <hr class="divider">
+                    <input type="submit" value="Continue to checkout" class="purchase__btn text text--white">
+                </form>
             </div>
         </main>
     </div>
